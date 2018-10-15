@@ -1,10 +1,29 @@
-@media only screen and (max-width: 2000px){
+
 	/*general*/
 	.navigation{
-	    
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    background-color: rgba(29,1,140,1);
+	    color: white;
+	    text-align: center;
+
+	}
+	.navigation div{
+		float: right;
+		width:80px;
+		color: white;
+
+
+	}
+	.alldivs{
+		width:90%;
+		text-align: center;
+		margin: auto;
 	}
 	.content{
-
+		margin-top:100px;
 	}
 	.loginform{
 
@@ -20,23 +39,73 @@
 	}
 	/*divs containing products*/
 	.products{
-
+		width: 100%;
+		
+		color:black;
+		border-radius: 30px;
+		border-color: white;
+		
+		
+		
 	}
-	.inside{
+	.each{
+		background-color: rgba(0,0,0,0.7);
+		width: 300px;
+		margin: 10px;
+		float:left;
+		color:white;
+		border-radius: 20px;
+		box-shadow: 20px 0px;
+		border-style: double;
 
 	}
 	.cells{
 		float:left;
+		margin:10px;
 	}
+	.cells button{
+		width: 80px;
+		border-radius: 20px;
+		background-color: white;
+
+	}
+	.currency{
+		color: gold;
+	}
+	.price{
+		color:yellow;
+	}
+	.search{
+		width: 80%;
+		margin: 20px;
+		
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-style: double;
+		border-color:red;
+	}
+	.left{
+		float: left;
+		width: 60%;
+	}
+	.right{
+		width: 40%;
+		float: right;
+	}
+
 	/*divs containing statistics*/
 	.stats{
 
 	}
 	body{
-   
+   		background-image: url(../Assets/images/back.jpg);
    		background-size:cover;
+   		font-size: 17px;
 	}
-}
+	
+
+
 
 @media only screen and (max-width: 720px){
 
