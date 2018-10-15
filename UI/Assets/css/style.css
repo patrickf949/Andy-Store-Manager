@@ -41,7 +41,7 @@
 		width:90%;
 		text-align: center;
 		margin: auto;
-		
+
 	}
 	.content{
 		margin-top:100px;
@@ -120,10 +120,11 @@
 	}
 	.buttons button{
 		width: 150px;
-		height: 30px;
+		height: 35px;
 		border-radius: 20px;
 		background-color: white;
 		margin-top: 10px;
+		border-style: none;
 	}
 
 	.topbuttons button{
