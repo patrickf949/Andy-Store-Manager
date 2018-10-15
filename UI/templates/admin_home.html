@@ -4,14 +4,21 @@
         <meta charset="utf-8">
         <title>Admin | Home</title>
         
-        <link rel="stylesheet" href="Assets/css/style.css" />
+        <link rel="stylesheet" href="../Assets/css/style.css" />
     </head>
     <body>
-        <div>
+        <div class="alldivs">
             <div class="navigation">
-                <div>
-
-                </div>
+                <a href="index.html">
+                    <div>
+                        <h3>Sign Out</h3>
+                    </div>
+                </a>
+                <a href="admin_home.html">
+                    <div>
+                        <H3>Home</H3>
+                    </div>
+                </a>
             </div>
             <div class="content">
                 <div>
@@ -53,60 +60,59 @@
                 <div class="stats" id="stats4">
                     <H1><b>2000</b></H1>
                     <br/>
-                    <H1>Store Attendants</H1>
                 </div>
             </div>
             <div class="products">
-                <div>
-                    <H1>Store Attendants</H1>
+                <div class="inside">
+                    <div>
+                        <H1>Store Attendants</H1>
+                    </div>
+                    <div>
+                        <input type="Search" name="Search" placeholder="Search Store Attendants" class="search" >
+                    </div>
+                    <div class="each">                   
+                        <div class="cells">
+                            <span>
+                                Name:
+                            </span>
+                            <span>
+                                Janin
+                            </span>
+                        </div>
+                        <div class="cells">
+                            <span>
+                                Total Sale Records
+                            </span>&nbsp&nbsp&nbsp&nbsp
+                            <span>
+                                200
+                            </span>
+                        </div>
+                        <div class="cells">
+                            <span>
+                                Total items sold <b>(pcs)</b>
+                            </span>&nbsp&nbsp&nbsp&nbsp
+                            <span>
+                                2000
+                            </span>
+                        </div>
+                        <div class="cells">
+                            <span>
+                                Total Amount <b class="currency">(UGX)</b>
+                            </span>&nbsp&nbsp&nbsp&nbsp
+                            <span class="price">
+                                2,000,000/=
+                            </span>
+                        </div>
+                        <div class="cells">
+                            <button>
+                                Edit
+                            </button>
+                            <button>
+                                Delete
+                            </button>
+                        </div>    
+                    </div>
                 </div>
-                <div>
-                    <input type="Search" name="Search" placeholder="Search Store Attendants" class="search" />
-                </div>
-                <!--Store Attendants-->
-                <div class="each">                   
-                    <div class="cells">
-                        <span>
-                            Name:
-                        </span>
-                        <span>
-                            Janin
-                        </span>
-                    </div>
-                    <div class="cells">
-                        <span>
-                            Total Sale Records
-                        </span>
-                        <span>
-                            200
-                        </span>
-                    </div>
-                    <div class="cells">
-                        <span>
-                            Total items sold <b>(pcs)</b>
-                        </span>
-                        <span>
-                            2000
-                        </span>
-                    </div>
-                    <div class="cells">
-                        <span>
-                            Total Amount <b>(UGX)</b>
-                        </span>
-                        <span>
-                            2,000,000/=
-                        </span>
-                    </div>
-                    <div class="cells">
-                        <button>
-                            Edit
-                        </button>
-                        <button>
-                            Delete
-                        </button>
-                    </div>    
-                </div>
-
             </div>
         </div>
     </body>

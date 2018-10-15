@@ -4,57 +4,75 @@
         <meta charset="utf-8">
         <title>Attendant | Cart</title>
         
-        <link rel="stylesheet" href="Assets/css/style.css" />
+        <link rel="stylesheet" href="../Assets/css/style.css" />
     </head>
     <body>
-        <div>
+        <div class="alldivs">
             <div class="navigation">
-                <div>
-
-                </div>
+                <a href="index.html">
+                    <div>
+                        <h3>Sign Out</h3>
+                    </div>
+                </a>
+                <a href="attendant_home.html">
+                    <div>
+                        <H3>Home</H3>
+                    </div>
+                </a>
             </div>
             <div class="content">
                 <H1>Cart</H1>
                 <H2>Select the items to add to cart</H2>
             </div>
-            <div class="content">
-                <H1>Search All Products</H1>
+            <div >
+                <H3>Search All Products</H3>
                 
             </div>
             <div class="products">
                 <div>
-                    <input type="Search" name="Search">
+                    <input type="Search" name="Search" placeholder="Search Products" class="search">
                 </div>
                 <div class="each">                   
                     <div class="cells">
                         <span>
                             Fresh Diary Milk 500ml
-                        </span>
+                        </span><br/>
                     </div>
-                    <div class="cells">
-                        <span>
-                            Quantity Available:
-                        </span>
-                        <span>
-                            200 pcs
-                        </span>
+                    <div class="left">
+                        <div class="cells">
+                            <span>
+                                Quantity Available:
+                            </span><br/>
+                        </div>
+                        <div class="cells">
+                            <span>
+                                Price<b class="currency">(UGX)</b>
+                            </span><br/>                            
+                        </div>
+                        <div class="cells">
+                            <button>
+                                Add
+                            </button><br/>
+                        </div>    
                     </div>
-                    <div class="cells">
-                        <span>
-                            Price(UGX)
-                        </span>
-                        <span>
-                            2,000/=
-                        </span>
+                    <div class="right">
+                        <div class="cells">                       
+                            <span>
+                                200 pcs
+                            </span><br/>
+                        </div>
+                        <div class="cells">
+                            <span class="price">
+                                2,000/=
+                            </span><br/>
+                        </div>
+                        <div class="cells">
+                            <button>
+                                Delete
+                            </button><br/>
+                        </div>    
                     </div>
-                    <div class="cells">
-                        <button>
-                            Add
-                        </button>
-                        <button>
-                            Delete
-                        </button>
-                    </div>    
+                        
                 </div>
         </div>
     </body>
