@@ -1,5 +1,6 @@
 
 	/*general*/
+	/*Top Menu bar styling*/
 	.navigation{
 	    position: fixed;
 	    left: 0;
@@ -10,70 +11,136 @@
 	    text-align: center;
 
 	}
-	.navigation div{
+	.headerbuttons div{
 		float: right;
 		width:80px;
 		color: white;
+	}
 
+	.headerbuttons{
+		width: 200px;
+		margin-right: 3%;
+		float: right;
+	}
+	.title{
+		color:white;
+		float: left;
+		margin-left: 3%;
+	}
+	.title i{	
+		color: yellow
+	}
+	/*Major content(body) div tags*/
+	.heading{
+		
+		text-align: centre;
+		
 
 	}
 	.alldivs{
 		width:90%;
 		text-align: center;
 		margin: auto;
+		
 	}
 	.content{
 		margin-top:100px;
 	}
+	.content h1{
+		color:blue;
+	}
 	.loginform{
+		border-radius: 20px;
+		background-color: rgba(2,10,180,0.8);
+		width: 300px;
+		color: white;
+		margin:auto;
 
 	}
+	.info{
+		text-align: center;
+		width: 90%;
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-style: double;
+		border-color:red;
+		border-radius: 20px;
+		height: 30px;
+	}
 	.inner{
-
+		
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%
+	}
+	.inner div{
+		margin-top: 20px;
 	}
 	.info{
 
 	}
 	.buttons{
-
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
-	/*divs containing products*/
+	
+	/*containing items or products or client information*/
 	.products{
-		width: 100%;
-		
+		width: 94%;
+		margin:3%;
 		color:black;
-		border-radius: 30px;
-		border-color: white;
-		
-		
-		
 	}
 	.each{
-		background-color: rgba(0,0,0,0.7);
+		background-color:gold;
 		width: 300px;
 		margin: 10px;
 		float:left;
-		color:white;
+		color:black;
 		border-radius: 20px;
-		box-shadow: 20px 0px;
-		border-style: double;
+		box-shadow: 10px 5px 10px black;
+		border-style:none;
 
+	}
+	.cells button{
+		background-color: red;
+		color: black;
+		width: auto;
+		height: 30px;
+		border-radius: 20px;
+		border-style: none;
+		margin-top: 10px;
 	}
 	.cells{
 		float:left;
-		margin:10px;
-	}
-	.cells button{
-		width: 80px;
-		border-radius: 20px;
-		background-color: white;
+		margin: 10px;
+		width: 80%;
 
 	}
+	.buttons button{
+		width: 150px;
+		height: 30px;
+		border-radius: 20px;
+		background-color: white;
+		margin-top: 10px;
+	}
+
+	.topbuttons button{
+		width: 150px;
+		height: 30px;
+		border-radius: 20px;
+		background-color: gold;
+		margin-top: 10px;
+		color: black;
+		border-style: none;
+	}
+
 	.currency{
-		color: gold;
+		color: red;
 	}
 	.price{
-		color:yellow;
+		color:green;
 	}
 	.search{
 		width: 80%;
@@ -84,32 +151,73 @@
 		border-top-style: none;
 		border-bottom-style: double;
 		border-color:red;
+		
+		height: 30px;
 	}
 	.left{
 		float: left;
 		width: 60%;
+	}
+	.right div{
+		
+		text-align: right;
+	}
+	.left div{
+		width: 100%;
+		text-align: left;	
 	}
 	.right{
 		width: 40%;
 		float: right;
 	}
 
+
 	/*divs containing statistics*/
-	.stats{
+	.statholder{
+		width:100%;
 
 	}
-	body{
-   		background-image: url(../Assets/images/back.jpg);
-   		background-size:cover;
-   		font-size: 17px;
+	.stats{
+		width: 40%;
+		margin-left:5%;
+		margin-right: 5%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		float: left;
+		border-radius: 20px;
+		border-style: none;
+		color: white;
 	}
+	.stats1{
+		background-color: red;
+	}
+	.stats2{
+		background-color: purple;
+	}
+	.stats3{
+		background-color: green;
+	}
+	.stats4{
+		background-color: orange;
+	}
+
+	body{
+   		background-image: url('../Assets/images/back.jpg');
+   		background-size:cover;
+   		font-size: 14px;
+	}
+
 	
 
 
 
 @media only screen and (max-width: 720px){
 
-	
+	.stats{
+		width: 80%;
+		margin: 10%;
+		float: left;
+	}
 }
 
 @media only screen and (max-width: 480px){
