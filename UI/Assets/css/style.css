@@ -236,10 +236,11 @@
 	}
 
 	body{
-   		background-image: url('../Assets/images/back.jpg');
+   		background-image: url(../Assets/images/back.jpg);
    		background-size:cover;
    		font-size: 14px;
 	}
+	
 	.footer{
 	    position: fixed;
 	    left: 0;

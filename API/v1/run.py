@@ -1,6 +1,6 @@
-from flask import Flask, request, jsonify
-from accounts import *
-from records import *
+from flask import Flask, request,jsonify
+from accounts import Accounts
+from records import Records
 from products import Products
 
 
@@ -12,31 +12,33 @@ action = store_manager.Product_Operation("Yivanna Biles")
 def home_page():
     return "Store Manager welcomes you!\nThis is a web application to enable store owners manage sales and product inventory records. This "
 
-@app.route('/v1/products/create', methods = ['GET','POST'])
+@app.route('/products/create', methods = ['GET','POST'])
 def create_product():
     """
     This Method adds a product to the inventory
+    params: n/a
+    returns:n/a
     """
     if request.method == 'POST':
         name = request.form.get('name')
         unit = request.form.get('unit')
         quantity = int(request.form.get('quantity'))
-        min_quantity = int(request.form.get('minimum_quantity'))      
+        min_quantity = int(request.form.get('min_quantity'))      
         price = int(request.form.get('unit_price'))
-        action.admin_create_product(name, unit, unit_price, quantity, minimum_quantity)  
+        action.admin_create_product(name, unit, price, quantity, min_quantity)  
         return action.response
         # return jsonify(store_manager.inventory)
 
-@app.route('/v1/products/<int:productId>')
+@app.route('/products/<int:productId>')
 def get_product_by_id(productId):    
     return jsonify(action.get_product_by_id(productId))
 
 
-@app.route('/v1/products')
+@app.route('/products')
 def get_all_products():
     return jsonify(store_manager.inventory)
 
-@app.route('/v1/sales/shopping_cart', methods = ['GET', 'POST'])
+@app.route('/sales/shopping_cart', methods = ['GET', 'POST'])
 def shopping_cart():
     if request.method == 'POST':
         product_id = int(request.form.get('product_id'))
