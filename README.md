@@ -15,7 +15,7 @@ Test Badges
 | Page | Purpose | link |
 | :---------------- | :---------------| :--------------- |
 | Landing Page | First page viewed by user, contains login options, first being for store attendant and second being Admin Login | [Attendant Login](https://patrickf949.github.io/Store-Manager/UI/templates/) |
-| Admin Dashboard | The Dashboard viewed by Admin on login, showing all Attendants and their information including total sales, sales worth which on click leads to the specified attendants profile. This page also inclueds important details such as total sales made, total sales worth.  | [Admin Dashboard](https://patrickf949.github.io/Store-Manager/UI/templates/admin_home.html) |
+| Admin Dashboard | The Dashboard viewed by Admin on login shows all Attendants and their information including total sales, sales worth which on click leads to the specified attendants profile. This page also includes important details such as total sales made, total sales worth,.  | [Admin Dashboard](https://patrickf949.github.io/Store-Manager/UI/templates/admin_home.html) |
 | Add Store Attendant | This is where an admin can add a new store attendant | [Add new Attendant](https://patrickf949.github.io/Store-Manager/UI/templates/signup.html) |
 | Edit Store Attendant | Admin can edit a store attendant's information on this page | [Add new Attendant](https://patrickf949.github.io/Store-Manager/UI/templates/editattendant.html) |
 | Add Product | The admin can add a product providing all necessary information such as the name, unit price, quantity in stock, minimum quantity acceptable in stock | [Add Product](https://patrickf949.github.io/Store-Manager/UI/templates/newproduct.html) |
