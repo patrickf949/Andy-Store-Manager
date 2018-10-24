@@ -4,10 +4,6 @@ Store Manager is a web application that helps store owners manage sales and prod
 
 ##### Front end 
 
-
-| Page | Purpose | link |
-=======
-
 ![Python 3.5](https://img.shields.io/badge/python-3.5+-blue.svg) ![PEP8](https://img.shields.io/badge/code%20style-pep8-blue.svg) ![pylint Score](https://mperlet.github.io/pybadge/badges/7.89.svg)
 
 ##### Test Badges
@@ -19,7 +15,6 @@ Store Manager is a web application that helps store owners manage sales and prod
 
 
 | Page | Purpose | Github pages link |
-
 | :---------------- | :---------------| :--------------- |
 | Landing Page | First page viewed by user, contains login options, first being for store attendant and second being Admin Login | [Attendant Login](https://patrickf949.github.io/Store-Manager/UI/templates/) |
 | Admin Dashboard | The Dashboard viewed by Admin on login shows all Attendants and their information including total sales, sales worth which on click leads to the specified attendants profile. This page also includes important details such as total sales made, total sales worth,.  | [Admin Dashboard](https://patrickf949.github.io/Store-Manager/UI/templates/admin_home.html) |
