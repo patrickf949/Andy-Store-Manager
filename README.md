@@ -2,8 +2,6 @@
 Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.
 
 
-##### Front end 
-
 ![Python 3.5](https://img.shields.io/badge/python-3.5+-blue.svg) ![PEP8](https://img.shields.io/badge/code%20style-pep8-blue.svg) ![pylint Score](https://mperlet.github.io/pybadge/badges/7.89.svg)
 
 ##### Test Badges
