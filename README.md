@@ -1,10 +1,10 @@
 # Store-Manager
 Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.
 
-##### Test Badges
 
 ![Python 3.5](https://img.shields.io/badge/python-3.5+-blue.svg) ![PEP8](https://img.shields.io/badge/code%20style-pep8-blue.svg) ![pylint Score](https://mperlet.github.io/pybadge/badges/7.89.svg)
 
+##### Test Badges
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)[![Build Status](https://travis-ci.org/patrickf949/Store-Manager.svg?branch=ft-PageDesign-Improved)](https://travis-ci.org/patrickf949/Store-Manager)
 
@@ -12,12 +12,12 @@ Store Manager is a web application that helps store owners manage sales and prod
 ##### Front end 
 
 
-| Page | Purpose | link |
+| Page | Purpose | Github pages link |
 | :---------------- | :---------------| :--------------- |
 | Landing Page | First page viewed by user, contains login options, first being for store attendant and second being Admin Login | [Attendant Login](https://patrickf949.github.io/Store-Manager/UI/templates/) |
 | Admin Dashboard | The Dashboard viewed by Admin on login shows all Attendants and their information including total sales, sales worth which on click leads to the specified attendants profile. This page also includes important details such as total sales made, total sales worth,.  | [Admin Dashboard](https://patrickf949.github.io/Store-Manager/UI/templates/admin_home.html) |
 | Add Store Attendant | This is where an admin can add a new store attendant | [Add new Attendant](https://patrickf949.github.io/Store-Manager/UI/templates/signup.html) |
-| Edit Store Attendant | Admin can edit a store attendant's information on this page | [Add new Attendant](https://patrickf949.github.io/Store-Manager/UI/templates/editattendant.html) |
+| Edit Store Attendant | Admin can edit a store attendant's information on this page | [Edit Attendant](https://patrickf949.github.io/Store-Manager/UI/templates/editattendant.html) |
 | Add Product | The admin can add a product providing all necessary information such as the name, unit price, quantity in stock, minimum quantity acceptable in stock | [Add Product](https://patrickf949.github.io/Store-Manager/UI/templates/newproduct.html) |
 | Edit Product | The admin can edit a product - when adding more stock,or changing price due to  inflation, or if a robbery occured - providing quantity of stock to be added or changing minimum quantity, name | [Edit Product](https://patrickf949.github.io/Store-Manager/UI/templates/editproduct.html) |
 | Products | On this page, the admin can view all the available products in the inventory, plus their records, how many times they've been sold, their price, quantity, minimum quantity | [All products](https://patrickf949.github.io/Store-Manager/UI/templates/products.html) |
