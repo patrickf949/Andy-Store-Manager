@@ -30,6 +30,15 @@
 	.title i{	
 		color: yellow
 	}
+	.title a{
+		color: white
+	}
+	.title div{
+		float: right;
+		width:80px;
+		color: white;
+	}
+
 	/*Major content(body) div tags*/
 	.heading{
 		width:100% ;
@@ -244,7 +253,14 @@
 	}
 		
 
-
+	.product{/*one product*/
+		width: 90%;
+		margin: auto;
+		font-size: 30px
+	}
+	a h4{
+		color:white
+	}
 
 @media only screen and (max-width: 720px){
 	.each{
