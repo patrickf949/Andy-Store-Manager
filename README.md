@@ -11,11 +11,6 @@ Test Badges
 
 ##Front end 
 
-| Page        | Purpose | link  |
-| ------------- |:-------------:| -----:|
-| Landing Page      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
 | Page | Purpose | link |
 | :---------------- | :---------------| :--------------- |
