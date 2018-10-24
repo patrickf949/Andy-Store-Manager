@@ -222,17 +222,8 @@
 		color: white;
 		font-size: 10px;
 	}
-	.stats1{
-		background-color: red;
-	}
-	.stats2{
-		background-color: purple;
-	}
-	.stats3{
-		background-color: green;
-	}
-	.stats4{
-		background-color: orange;
+	.stats1, .stats4, .stats3, .stats2{
+		background-color: rgba(29,1,140,0.8)
 	}
 
 	body{
@@ -257,7 +248,7 @@
 
 @media only screen and (max-width: 720px){
 	.each{
-		margin: auto
+		margin: auto;
 		margin-top:10px;
 	}
 	.stats{
@@ -273,3 +264,15 @@
 		width: 280px;
 	}
 }
+
+/* @media all and (max-width: 320px) and (min-height: 320px){
+	.each{
+		width: 90%;
+	}	
+} */
+
+/* @media (max-resolution: 1dppx) {
+	.each{
+		width: 280px; 
+	}
+} */
