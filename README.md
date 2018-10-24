@@ -12,7 +12,7 @@ Store Manager is a web application that helps store owners manage sales and prod
 ##### Front end 
 
 
-| Page | Purpose | link |
+| Page | Purpose | Github pages link |
 | :---------------- | :---------------| :--------------- |
 | Landing Page | First page viewed by user, contains login options, first being for store attendant and second being Admin Login | [Attendant Login](https://patrickf949.github.io/Store-Manager/UI/templates/) |
 | Admin Dashboard | The Dashboard viewed by Admin on login shows all Attendants and their information including total sales, sales worth which on click leads to the specified attendants profile. This page also includes important details such as total sales made, total sales worth,.  | [Admin Dashboard](https://patrickf949.github.io/Store-Manager/UI/templates/admin_home.html) |
