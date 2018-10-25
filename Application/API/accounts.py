@@ -2,14 +2,14 @@
 This module deals with manipulation of accounts
 """
 class Accounts:
-    admin={ 
+    admin = { 
         1 : {
             "username":"admin",
             "password":"pass"
         }
     }
     
-    attendants={
+    attendants = {
         1 : {
             'username' : 'mchwezi',
             'password' : 'pass',
@@ -26,12 +26,18 @@ class Accounts:
         4 : {
             'username' : 'adele',
             'password' : 'pass'
+        },
+        5 : {
+            'username' : 'alicia',
+            'password' : 'pass'
         }
     }
 
     activeuser=[]
 
     def Accounts(self):
+        
+        #print(attendants)
         pass
 
 
