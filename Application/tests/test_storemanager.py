@@ -1,18 +1,22 @@
+import os
 import pytest
-from products import Products
-from accounts import Accounts
-from records import Records
+from Application.models.products import Products
+from Application.models.accounts import Accounts
+from Application.models.records import Records
 
 
 class TestStoreManager():
 	
 	def test_creation(self):
+		"""
+		initialise objects
+		"""
 		self.products = Products()
 		self.accounts = Accounts()
 		self.records = Records()
-		a = isinstance(self.products, Products)
-		b = isinstance(self.records, Records)
-		c = isinstance(self.accounts, Accounts)
+		assert isinstance(self.products, Products)== True
+		assert isinstance(self.records, Records)==True
+		assert isinstance(self.accounts, Accounts)==True
 
 #products
 	def test_addProduct(self):
@@ -21,8 +25,8 @@ class TestStoreManager():
 		params: n/a
 		returns: n/a
 		"""
-		pass
-
+		self.products = Products('burgers', 120,10,1000)
+		assert self.products.
 
 	def test_deleteProduct(self):
 		"""

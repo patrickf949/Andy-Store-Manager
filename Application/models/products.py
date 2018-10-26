@@ -82,15 +82,33 @@ class Products:
         }
 
     }
-    
-    def addProduct(self, list):
+
+    def __init__(self, name='', qty=0, min_qty=0, price=0):
+        if name!='':
+            self.name=name
+            self.qty = qty
+            self.min_qty = qty
+            self.price= price
+
+        
+    def addProduct(self):
         """
         Adds A new product to inventory
-        params: list of the information of the new product
-        return: True if object is added
+        params: n/a
+        return: tuple of True, and All Products in inventory if object is added
         """
-        pass
-    
+        if self.checkIfProductExists(self.name) or self.checkIfProductExists(self.name)=='There are no items in the store':
+            newId = self.getId()
+            Products.products[newId]={
+                                        "name" : self.name,
+                                        "quantity" : self.qty,
+                                        "min_quantity" : self.min_qty,
+                                        "price" : self.price
+
+                                    }
+            return True, Products.products
+        return 'The Product is already in inventory'
+        
 
     def deleteProduct(self, id):
         """
@@ -120,10 +138,10 @@ class Products:
         pass
 
 
-    def addStockForExistingProduct(self,dict):
+    def addStockForExistingProduct(self,id, amount):
         """
         Adds Quantity of an existing product in stock
-        params: dictionary with key as item id and value as the added stock
+        params: product id and amount to be added
         return: True if addedd
         """
         pass
@@ -136,8 +154,31 @@ class Products:
         """
         pass
 
+    def checkIfProductExists(self, productId=0, name=''):
+        """
+        This method checks whether a product exists
+        params:either an ID or a name
+        returns: true if exists
+        """
+        if len(Products.products)==0:#
+            return "There are no items in the store"
 
-    
+        elif productId==0:
+            for i in Products.products:
+                if name == i['name']:
+                    return True
+            return False
+        
+        elif name=='':
+            if productId in Products.products.keys():
+                return True
+            return False
 
-
-
+    def getId(self):
+        """
+        This method provids an id for a new product
+        params: n/a
+        returns:id for new product.
+        """
+        id = len(Products.products)+1
+        return id
