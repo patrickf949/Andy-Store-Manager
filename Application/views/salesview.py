@@ -12,7 +12,11 @@ newCart = {"total_price":0, "total_items_in_cart":0}
 
 @blue_print.route('/v1/sales/shopping_cart', methods = ['GET', 'POST'])
 def shopping_cart():
-    if request.method == 'POST':        
+    """
+    create carts
+    """        
+    if request.method == 'POST':
+        
         product_id = int(request.form.get('product_id'))
         quantity = int(request.form.get('quantity'))
 
@@ -46,7 +50,7 @@ def shopping_cart():
     return jsonify ({"Response":response, "Items in Cart": current_shopping_cart})  
 
 @blue_print.route('/v1/sales/create_record')
-def create_sales_record():
+def createSalesRecord():
     global current_shopping_cart
     attendant = ""
     time = datetime.now()            
@@ -68,7 +72,7 @@ def create_sales_record():
     return jsonify({"Response": response}), 200
 
 @blue_print.route('/v1/sales/allrecords')
-def get_all_records():
+def getAllRecords():
     """
     Get all sales records
     params: n/a
@@ -82,7 +86,7 @@ def get_all_records():
     return jsonify({"Response":response, "Sales Records":Records.records}), 200
 
 @blue_print.route('/v1/sales/<sale_id>')
-def get_record_by_id(sale_id): 
+def getRecordbyId(sale_id): 
     """
     Get individual sale record
     params: sale id

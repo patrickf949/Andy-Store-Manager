@@ -104,7 +104,6 @@ class Products:
                                         "quantity" : self.qty,
                                         "min_quantity" : self.min_qty,
                                         "price" : self.price
-
                                     }
             return True, Products.products
         return 'The Product is already in inventory'

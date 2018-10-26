@@ -1,8 +1,8 @@
 import os
 import pytest
-from Application.models.products import Products
-from Application.models.accounts import Accounts
-from Application.models.records import Records
+from ..models.products import Products
+from ..models.accounts import Accounts
+from ..models.records import Records
 
 
 class TestStoreManager():
@@ -26,8 +26,8 @@ class TestStoreManager():
 		returns: n/a
 		"""
 		self.products = Products('burgers', 120,10,1000)
-		assert self.products.addProduct()== True
-		assert self.products.addProduct()==False
+		self.assertTrue(self.products.addProduct())
+		self.assertFalse(self.products.addProduct())
 
 	def test_deleteProduct(self):
 		"""
