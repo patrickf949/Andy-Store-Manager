@@ -51,8 +51,9 @@ def shopping_cart():
 
 @blue_print.route('/v1/sales/create_record')
 def createSalesRecord():
+    global user
     global current_shopping_cart
-    attendant = ""
+    attendant = user
     time = datetime.now()            
     details = current_shopping_cart            
     total_price = current_shopping_cart["total_price"]
