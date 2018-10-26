@@ -39,7 +39,7 @@ def shopping_cart():
             response = "Product added to cart successfully!"
             return jsonify ({"Response":response, "Items in Cart":current_shopping_cart}), 200
 
-    if len(current_shopping_cart) > 2:        
+    if len(current_shopping_cart) > 0:        
         return jsonify ({"Items in Cart": current_shopping_cart}), 200  
 
     response = "Cart is empty!"
@@ -48,12 +48,18 @@ def shopping_cart():
 @blue_print.route('/v1/sales/create_record')
 def create_sales_record():
     global current_shopping_cart
-    attendant = "Attendant 1"
-    date = datetime.now()            
+    attendant = ""
+    time = datetime.now()            
     details = current_shopping_cart            
     total_price = current_shopping_cart["total_price"]
     items= current_shopping_cart["total_items_in_cart"]
-    sale = Records(attendant, details, date, items, total_price)
+    dict = {'user':attendant,
+            'items': items,
+            'nos_of_items': details,
+            'total': total_price,
+            'time': time
+        }
+    sale = Records(dict)
     sale.createSaleRecord()
     current_shopping_cart = {}
 
@@ -63,6 +69,11 @@ def create_sales_record():
 
 @blue_print.route('/v1/sales/allrecords')
 def get_all_records():
+    """
+    Get all sales records
+    params: n/a
+    returns: all records
+    """
     if len(Records.records)<=0:
         response = "There are no sales records to show!"
         return jsonify({"Response":response, "Sales Records":Records.records})
@@ -72,6 +83,11 @@ def get_all_records():
 
 @blue_print.route('/v1/sales/<sale_id>')
 def get_record_by_id(sale_id): 
+    """
+    Get individual sale record
+    params: sale id
+    returns: individual sale record information
+    """
     if  len(Records.records) == 0:
         response = "You are yet to receive your first customer. No sales records yet"
         return jsonify({"response":response})

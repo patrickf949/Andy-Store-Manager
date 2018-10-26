@@ -16,10 +16,11 @@ class Records:
                     'Total' :  25200}                
             }
 
-    def __init__(self, dict):
-        self.attendant= dict['user']
-        self.items = dict['items']
-        self.created_at = dict['created_at']
+    def __init__(self, dict=0):
+        if dict!=0:
+            self.attendant= dict['user']
+            self.items = dict['items']
+            self.created_at = dict['created_at']
         
 
     
@@ -31,8 +32,8 @@ class Records:
         id = self.getId()       
         Records.records[id]["attendant"] = self.attendant
         Records.records[id]["created_at"] = self.created_at
-        Records.records["total_sales"] += self.total_sales
-        Records.records["total_products_sold"] += self.total_items
+        
+        
     
 
     def deleteSaleRecord(self, saleId):
@@ -41,14 +42,26 @@ class Records:
         Params: n/a
         returns: n/a
         """
-        pass
+        if self.checkIfRecordExists(saleId):
+            del Records.records[saleId]
+            return True
+        else:
+            return False
 
     def deletesAllRecords(self): 
         """
         Deletes all sale records:
-
+        params: n/a
+        returns: n/a
         """
-        pass
+        if len(Records.records)<=0: 
+            Records.records.clear()
+            return True
+
+    def checkIfRecordExists(self,id):
+        if id in Records.records.keys():
+            return True
+        return False
 
     def getId(self):
         """
@@ -65,5 +78,11 @@ class Records:
         params: n/a
         returns: all subtotals and total and arranges final sale record
         """
-        # for i in self.items:
-        pass
+        total=0
+        for i in self.items:
+            subtotal = Products.products[i]['price']*i['no_of_items']
+            total += subtotal
+
+        return 
+        
+        

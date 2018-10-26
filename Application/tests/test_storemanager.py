@@ -26,7 +26,8 @@ class TestStoreManager():
 		returns: n/a
 		"""
 		self.products = Products('burgers', 120,10,1000)
-		assert self.products.
+		assert self.products.addProduct()== True
+		assert self.products.addProduct()==False
 
 	def test_deleteProduct(self):
 		"""
@@ -34,7 +35,8 @@ class TestStoreManager():
 		params: n/a
 		returns: n/a
 		"""
-		pass
+		self.products = Products('burgers',120,10,1000)
+		# assert self.products.
 
 	def test_deleteAllProducts(self):
 		"""

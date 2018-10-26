@@ -116,7 +116,11 @@ class Products:
         params: id of the product to be deleted
         return: true if deleted
         """
-        pass
+        if self.checkIfProductExists(id):
+            del Products.products[id]
+            return True
+        else:
+            return False
     
 
     def reduceAfterProductSale(self, list):
@@ -144,7 +148,8 @@ class Products:
         params: product id and amount to be added
         return: True if addedd
         """
-        pass
+        if self.checkIfProductExists(id):
+            id['quantity']+=amount
 
 
     def updateExistingProduct(self, dict):
